@@ -83,6 +83,10 @@ body {
     color: #3cb9db;
 }
 
+.active {
+    border-bottom: 2px solid #3cb9db;
+}
+
 .clear-fix {
     clear: both;
     float: none;
@@ -202,6 +206,17 @@ body {
     background: rgb(39, 163, 1);
 }
 
+.btn-danger {
+    background-color: red!important;
+    color: white!important;
+    margin-right: 5px;
+}
+
+.btn-warning {
+    background-color: orange!important;
+    color: white!important;
+}
+
 .full-form {
     width: 50%;
     margin: 0px auto;
@@ -216,13 +231,18 @@ body {
 }
 
 input[type="text"],
-textarea {
+textarea,
+input[type="file"] {
     width: 100%;
     min-height: 30px;
     border: 1px solid #ccc;
     margin-bottom: 5px;
     padding: 3px;
     transition: 300ms all;
+}
+
+input[type="submit"] {
+    margin-top: 15px
 }
 
 input[type="text"]:focus,
@@ -265,6 +285,10 @@ textarea {
 .article-item .image-wrap img {
     height: 100%;
     text-align: center;
+}
+
+.thumb {
+    width: 500px;
 }
 
 .article-item h2 {
